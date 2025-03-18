@@ -1,0 +1,52 @@
+{
+  "model_endpoint": "http://localhost:1234/v1/chat/completions",
+  "timestamp": "2025-03-17 15:29:29",
+  "title": "Test-Resources",
+  "summary": {
+    "total_tasks": 1,
+    "avg_response_time": 0.7840249538421631,
+    "api_success_rate": 1.0,
+    "execution_success_rate": 0,
+    "test_pass_rate": 0,
+    "by_category": {
+      "syntax": {
+        "avg_response_time": 0.7840249538421631,
+        "api_success_rate": 1.0,
+        "execution_success_rate": 0,
+        "test_pass_rate": 0
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "avg_response_time": 0.7840249538421631,
+        "api_success_rate": 1.0,
+        "execution_success_rate": 0,
+        "test_pass_rate": 0
+      }
+    },
+    "by_language": {
+      "python": {
+        "avg_response_time": 0.7840249538421631,
+        "api_success_rate": 1.0,
+        "execution_success_rate": 0,
+        "test_pass_rate": 0
+      }
+    }
+  },
+  "detailed": [
+    {
+      "task_name": "hello_world",
+      "category": "syntax",
+      "difficulty": "easy",
+      "language": "python",
+      "avg_response_time": 0.7840249538421631,
+      "api_success_rate": 1.0,
+      "execution_success_rate": 0,
+      "test_pass_rate": 0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 0
+      }
+    }
+  ]
+}

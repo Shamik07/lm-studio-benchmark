@@ -1,0 +1,310 @@
+{
+  "model_endpoint": "http://localhost:1234/v1/chat/completions",
+  "timestamp": "2025-03-14 10:55:13",
+  "title": "mlx-community/qwen2.5-coder-7b-instruct Go-Rust Benchmark",
+  "summary": {
+    "total_tasks": 16,
+    "avg_response_time": 8.446017900109291,
+    "api_success_rate": 0.0,
+    "execution_success_rate": 0.0,
+    "test_pass_rate": 0.0,
+    "by_category": {
+      "syntax": {
+        "avg_response_time": 0.7240965366363525,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0.0,
+        "test_pass_rate": 0.0
+      },
+      "algorithms": {
+        "avg_response_time": 3.7377942244211835,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0.0,
+        "test_pass_rate": 0.0
+      },
+      "data_structures": {
+        "avg_response_time": 7.410505270957946,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0,
+        "test_pass_rate": 0
+      },
+      "api_usage": {
+        "avg_response_time": 6.579782176017761,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0.0,
+        "test_pass_rate": 0.0
+      },
+      "web_dev": {
+        "avg_response_time": 7.61257848739624,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0.0,
+        "test_pass_rate": 0.0
+      },
+      "concurrency": {
+        "avg_response_time": 34.02779805660248,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0,
+        "test_pass_rate": 0
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "avg_response_time": 1.8733538746833802,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0.0,
+        "test_pass_rate": 0.0
+      },
+      "medium": {
+        "avg_response_time": 6.33822540640831,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0.0,
+        "test_pass_rate": 0.0
+      },
+      "hard": {
+        "avg_response_time": 19.234266912937166,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0.0,
+        "test_pass_rate": 0.0
+      }
+    },
+    "by_language": {
+      "go": {
+        "avg_response_time": 11.787394672632217,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0.0,
+        "test_pass_rate": 0.0
+      },
+      "rust": {
+        "avg_response_time": 5.104641127586365,
+        "api_success_rate": 0.0,
+        "execution_success_rate": 0.0,
+        "test_pass_rate": 0.0
+      }
+    }
+  },
+  "detailed": [
+    {
+      "task_name": "hello_world",
+      "category": "syntax",
+      "difficulty": "easy",
+      "language": "go",
+      "avg_response_time": 0.6080291748046875,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 5
+      }
+    },
+    {
+      "task_name": "hello_world",
+      "category": "syntax",
+      "difficulty": "easy",
+      "language": "rust",
+      "avg_response_time": 0.8401638984680175,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 5
+      }
+    },
+    {
+      "task_name": "fibonacci",
+      "category": "algorithms",
+      "difficulty": "easy",
+      "language": "go",
+      "avg_response_time": 2.648713779449463,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 15
+      }
+    },
+    {
+      "task_name": "fibonacci",
+      "category": "algorithms",
+      "difficulty": "easy",
+      "language": "rust",
+      "avg_response_time": 3.3965086460113527,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 15
+      }
+    },
+    {
+      "task_name": "binary_search",
+      "category": "algorithms",
+      "difficulty": "medium",
+      "language": "go",
+      "avg_response_time": 4.475885343551636,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 10
+      }
+    },
+    {
+      "task_name": "binary_search",
+      "category": "algorithms",
+      "difficulty": "medium",
+      "language": "rust",
+      "avg_response_time": 3.024186038970947,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 10
+      }
+    },
+    {
+      "task_name": "linked_list",
+      "category": "data_structures",
+      "difficulty": "medium",
+      "language": "go",
+      "avg_response_time": 6.2458515644073485,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0,
+      "test_pass_rate": 0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 0
+      }
+    },
+    {
+      "task_name": "linked_list",
+      "category": "data_structures",
+      "difficulty": "medium",
+      "language": "rust",
+      "avg_response_time": 8.575158977508545,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0,
+      "test_pass_rate": 0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 0
+      }
+    },
+    {
+      "task_name": "quicksort",
+      "category": "algorithms",
+      "difficulty": "hard",
+      "language": "go",
+      "avg_response_time": 3.7991482257843017,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 5
+      }
+    },
+    {
+      "task_name": "quicksort",
+      "category": "algorithms",
+      "difficulty": "hard",
+      "language": "rust",
+      "avg_response_time": 5.082323312759399,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 5
+      }
+    },
+    {
+      "task_name": "json_parser",
+      "category": "api_usage",
+      "difficulty": "medium",
+      "language": "go",
+      "avg_response_time": 4.427535820007324,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 5
+      }
+    },
+    {
+      "task_name": "json_parser",
+      "category": "api_usage",
+      "difficulty": "medium",
+      "language": "rust",
+      "avg_response_time": 8.732028532028199,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 5
+      }
+    },
+    {
+      "task_name": "html_parser",
+      "category": "web_dev",
+      "difficulty": "medium",
+      "language": "go",
+      "avg_response_time": 9.81225128173828,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 5
+      }
+    },
+    {
+      "task_name": "html_parser",
+      "category": "web_dev",
+      "difficulty": "medium",
+      "language": "rust",
+      "avg_response_time": 5.412905693054199,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0.0,
+      "test_pass_rate": 0.0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 5
+      }
+    },
+    {
+      "task_name": "parallel_processing",
+      "category": "concurrency",
+      "difficulty": "hard",
+      "language": "go",
+      "avg_response_time": 62.2817421913147,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0,
+      "test_pass_rate": 0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 0
+      }
+    },
+    {
+      "task_name": "parallel_processing",
+      "category": "concurrency",
+      "difficulty": "hard",
+      "language": "rust",
+      "avg_response_time": 5.773853921890259,
+      "api_success_rate": 0.0,
+      "execution_success_rate": 0,
+      "test_pass_rate": 0,
+      "execution_stats": {
+        "passes": 0,
+        "total": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+requests>=2.28.0
+matplotlib>=3.5.0
+numpy>=1.22.0
+tqdm>=4.64.0
+concurrent-futures
+pandas>=1.4.0
+tabulate>=0.8.10

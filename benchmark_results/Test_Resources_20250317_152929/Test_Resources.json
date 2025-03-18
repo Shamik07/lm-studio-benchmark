@@ -1,0 +1,95 @@
+{
+  "model_endpoint": "http://localhost:1234/v1/chat/completions",
+  "timestamp": "2025-03-17 15:29:29",
+  "num_runs": 1,
+  "title": "Test-Resources",
+  "tasks": [
+    {
+      "task_name": "hello_world",
+      "category": "syntax",
+      "difficulty": "easy",
+      "language": "python",
+      "runs": [
+        {
+          "run_id": 0,
+          "success": true,
+          "response_time": 0.7840249538421631,
+          "code_output": "def print_hello_world():\n    \"\"\"\n    Prints 'Hello, World!' to the console.\n    \"\"\"\n    print(\"Hello, World!\")\n\n# Call the function\nprint_hello_world()",
+          "raw_response": "```python\ndef print_hello_world():\n    \"\"\"\n    Prints 'Hello, World!' to the console.\n    \"\"\"\n    print(\"Hello, World!\")\n\n# Call the function\nprint_hello_world()\n```<|im_end|>\n",
+          "execution_results": {},
+          "resource_results": {
+            "duration": 3.62396240234375e-05,
+            "sample_count": 1,
+            "samples": [
+              {
+                "timestamp": 3.62396240234375e-05,
+                "cpu": {
+                  "percent": 0.0,
+                  "per_cpu": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "memory": {
+                  "used_gb": 14.1756591796875,
+                  "available_gb": 12.353363037109375,
+                  "percent": 65.7
+                },
+                "gpu": {
+                  "available": true,
+                  "utilization": 0.006999999999999999,
+                  "estimated": true
+                }
+              }
+            ],
+            "cpu": {
+              "percent": {
+                "mean": 0.0,
+                "max": 0.0,
+                "min": 0.0,
+                "std": 0.0
+              }
+            },
+            "memory": {
+              "used_gb": {
+                "mean": 14.1756591796875,
+                "max": 14.1756591796875,
+                "min": 14.1756591796875,
+                "peak_delta": 0.0
+              },
+              "percent": {
+                "mean": 65.7,
+                "max": 65.7
+              }
+            },
+            "gpu": {
+              "utilization": {
+                "mean": 0.006999999999999999,
+                "max": 0.006999999999999999,
+                "min": 0.006999999999999999,
+                "std": 0.0
+              }
+            },
+            "platform": {
+              "system": "Darwin",
+              "processor": "arm",
+              "python_version": "3.12.4"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

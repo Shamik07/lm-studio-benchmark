@@ -1,0 +1,35 @@
+{
+  "model_endpoint": "http://localhost:1234/v1/chat/completions",
+  "timestamp": "2025-03-13 19:20:25",
+  "num_runs": 1,
+  "tasks": [
+    {
+      "task_name": "hello_world",
+      "category": "syntax",
+      "difficulty": "easy",
+      "language": "python",
+      "runs": [
+        {
+          "run_id": 0,
+          "success": true,
+          "response_time": 1.070307731628418,
+          "code_output": "```python\ndef print_hello_world():\n    print('Hello, World!')\n\nprint_hello_world()\n```<|im_end|>\n"
+        }
+      ]
+    },
+    {
+      "task_name": "fibonacci",
+      "category": "algorithms",
+      "difficulty": "easy",
+      "language": "python",
+      "runs": [
+        {
+          "run_id": 0,
+          "success": true,
+          "response_time": 1.5364291667938232,
+          "code_output": "```python\ndef fibonacci(n):\n    if n <= 0:\n        return \"Input should be a positive integer\"\n    elif n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n):\n            a, b = b, a + b\n        return b\n```<|im_end|>\n"
+        }
+      ]
+    }
+  ]
+}

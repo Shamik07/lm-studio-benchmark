@@ -1,0 +1,49 @@
+{
+  "model_endpoint": "http://localhost:1234/v1/chat/completions",
+  "timestamp": "2025-03-13 19:20:25",
+  "summary": {
+    "total_tasks": 2,
+    "avg_response_time": 1.3033684492111206,
+    "success_rate": 1.0,
+    "by_category": {
+      "syntax": {
+        "avg_response_time": 1.070307731628418,
+        "success_rate": 1.0
+      },
+      "algorithms": {
+        "avg_response_time": 1.5364291667938232,
+        "success_rate": 1.0
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "avg_response_time": 1.3033684492111206,
+        "success_rate": 1.0
+      }
+    },
+    "by_language": {
+      "python": {
+        "avg_response_time": 1.3033684492111206,
+        "success_rate": 1.0
+      }
+    }
+  },
+  "detailed": [
+    {
+      "task_name": "hello_world",
+      "category": "syntax",
+      "difficulty": "easy",
+      "language": "python",
+      "avg_response_time": 1.070307731628418,
+      "success_rate": 1.0
+    },
+    {
+      "task_name": "fibonacci",
+      "category": "algorithms",
+      "difficulty": "easy",
+      "language": "python",
+      "avg_response_time": 1.5364291667938232,
+      "success_rate": 1.0
+    }
+  ]
+}

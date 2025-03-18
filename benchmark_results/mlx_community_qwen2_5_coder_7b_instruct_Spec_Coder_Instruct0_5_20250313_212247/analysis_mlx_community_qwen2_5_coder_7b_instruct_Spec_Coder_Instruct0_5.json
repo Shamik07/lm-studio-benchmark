@@ -1,0 +1,110 @@
+{
+  "model_endpoint": "http://localhost:1234/v1/chat/completions",
+  "timestamp": "2025-03-13 21:22:47",
+  "title": "mlx-community/qwen2.5-coder-7b-instruct Spec Coder Instruct0.5",
+  "summary": {
+    "total_tasks": 8,
+    "avg_response_time": 1.0560116291046142,
+    "success_rate": 1.0,
+    "by_category": {
+      "syntax": {
+        "avg_response_time": 0.5445330381393433,
+        "success_rate": 1.0
+      },
+      "algorithms": {
+        "avg_response_time": 1.2265044927597046,
+        "success_rate": 1.0
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "avg_response_time": 0.8206712126731872,
+        "success_rate": 1.0
+      },
+      "medium": {
+        "avg_response_time": 1.1854211330413817,
+        "success_rate": 1.0
+      },
+      "hard": {
+        "avg_response_time": 1.3972829580307007,
+        "success_rate": 1.0
+      }
+    },
+    "by_language": {
+      "python": {
+        "avg_response_time": 1.0114515542984008,
+        "success_rate": 1.0
+      },
+      "javascript": {
+        "avg_response_time": 1.1005717039108276,
+        "success_rate": 1.0
+      }
+    }
+  },
+  "detailed": [
+    {
+      "task_name": "hello_world",
+      "category": "syntax",
+      "difficulty": "easy",
+      "language": "python",
+      "avg_response_time": 0.652386474609375,
+      "success_rate": 1.0
+    },
+    {
+      "task_name": "hello_world",
+      "category": "syntax",
+      "difficulty": "easy",
+      "language": "javascript",
+      "avg_response_time": 0.4366796016693115,
+      "success_rate": 1.0
+    },
+    {
+      "task_name": "fibonacci",
+      "category": "algorithms",
+      "difficulty": "easy",
+      "language": "python",
+      "avg_response_time": 1.22657470703125,
+      "success_rate": 1.0
+    },
+    {
+      "task_name": "fibonacci",
+      "category": "algorithms",
+      "difficulty": "easy",
+      "language": "javascript",
+      "avg_response_time": 0.9670440673828125,
+      "success_rate": 1.0
+    },
+    {
+      "task_name": "binary_search",
+      "category": "algorithms",
+      "difficulty": "medium",
+      "language": "python",
+      "avg_response_time": 1.0916911602020263,
+      "success_rate": 1.0
+    },
+    {
+      "task_name": "binary_search",
+      "category": "algorithms",
+      "difficulty": "medium",
+      "language": "javascript",
+      "avg_response_time": 1.2791511058807372,
+      "success_rate": 1.0
+    },
+    {
+      "task_name": "quicksort",
+      "category": "algorithms",
+      "difficulty": "hard",
+      "language": "python",
+      "avg_response_time": 1.0751538753509522,
+      "success_rate": 1.0
+    },
+    {
+      "task_name": "quicksort",
+      "category": "algorithms",
+      "difficulty": "hard",
+      "language": "javascript",
+      "avg_response_time": 1.7194120407104492,
+      "success_rate": 1.0
+    }
+  ]
+}

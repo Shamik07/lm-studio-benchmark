@@ -1,0 +1,103 @@
+{
+  "duration": 1.016191005706787,
+  "sample_count": 2,
+  "samples": [
+    {
+      "timestamp": 7.987022399902344e-05,
+      "cpu": {
+        "percent": 0.0,
+        "per_cpu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "memory": {
+        "used_gb": 14.1756591796875,
+        "available_gb": 12.353363037109375,
+        "percent": 65.7
+      },
+      "gpu": {
+        "available": true,
+        "utilization": 0.006999999999999999,
+        "estimated": true
+      }
+    },
+    {
+      "timestamp": 1.016191005706787,
+      "cpu": {
+        "percent": 12.6,
+        "per_cpu": [
+          11.2,
+          9.9,
+          6.9,
+          4.0,
+          18.4,
+          30.3,
+          33.3,
+          31.6,
+          21.2,
+          2.0,
+          2.0,
+          2.0,
+          4.0,
+          3.0
+        ]
+      },
+      "memory": {
+        "used_gb": 16.275741577148438,
+        "available_gb": 10.250411987304688,
+        "percent": 71.5
+      },
+      "gpu": {
+        "available": true,
+        "utilization": 0.024,
+        "estimated": true
+      }
+    }
+  ],
+  "cpu": {
+    "percent": {
+      "mean": 6.3,
+      "max": 12.6,
+      "min": 0.0,
+      "std": 6.3
+    }
+  },
+  "memory": {
+    "used_gb": {
+      "mean": 15.225700378417969,
+      "max": 16.275741577148438,
+      "min": 14.1756591796875,
+      "peak_delta": 2.1000823974609375
+    },
+    "percent": {
+      "mean": 68.6,
+      "max": 71.5
+    }
+  },
+  "gpu": {
+    "utilization": {
+      "mean": 0.0155,
+      "max": 0.024,
+      "min": 0.006999999999999999,
+      "std": 0.0085
+    }
+  },
+  "platform": {
+    "system": "Darwin",
+    "processor": "arm",
+    "python_version": "3.12.4"
+  }
+}
