@@ -7,6 +7,8 @@ benchmark_gui/
 ├── config.py                 # Configuration and constants
 ├── utils.py                  # Utility functions
 ├── styles.py                 # Theme and styling definitions
+├── dashboard.py              # Main dashboard application with improved error handling
+├── run_dashboard.py          # Simple launcher script with proper import setup
 ├── views/
 │   ├── __init__.py           # View module initialization
 │   ├── benchmark_view.py     # Benchmark tab UI
@@ -44,7 +46,13 @@ benchmark_gui/
 
 ## Key UI Enhancements
 
-1. **Dialog Components**
+1. **Robust Window Management**
+   - **Improved Import Path Handling**: Proper management of Python import paths for reliable module loading
+   - **Frame Packing System**: Consistent frame management across all views to prevent blank UI issues
+   - **Fallback UI System**: Comprehensive fallback UIs that provide meaningful information when components fail
+   - **Consistent Window Structure**: Standardized approach to window creation and error handling
+
+2. **Dialog Components**
    - **GenerateReportDialog**: New dialog for leaderboard report generation
    - **ModelCompareDialog**: Enhanced with better error handling and visualization
    - **ResourceMetricsDialog**: Improved with better validation and guidance
@@ -52,52 +60,59 @@ benchmark_gui/
    - **EntryDetailsDialog**: Improved with tooltips and color coding
    - **AddLeaderboardEntryDialog**: Enhanced with smart model name extraction
 
-2. **State Management**
+3. **State Management**
    - Improved visualization state handling between tabs
    - Better tab navigation with name-based lookup
    - Enhanced error handling for file access
    - Added state persistence for important UI state
+   - Improved debugging through enhanced console logging
 
-3. **Benchmark Execution**
+4. **Benchmark Execution**
    - Added proper cancellation support
    - Enhanced error handling with specific suggestions
    - Improved progress tracking with better UI updates
    - Added more detailed logging of benchmark operations
 
-4. **UI Components**
+5. **UI Components**
    - Added tooltip system throughout the application
    - Implemented color coding for performance metrics
    - Enhanced table displays with sorting and formatting
    - Improved visualization displays with better scaling and explanations
    - Added contextual help and guidance throughout the UI
 
-5. **Error Handling**
+6. **Error Handling**
    - Added specific error messages for common issues
    - Enhanced recovery options when operations fail
    - Provided context-sensitive suggestions for resolving issues
    - Improved validation of user inputs and file operations
+   - Technical debugging information in fallback UIs for easier troubleshooting
 
 ## User Experience Flow
 
-1. **Benchmark Tab**
+1. **Dashboard Home**
+   - Clean card-based interface for main functions
+   - Improved status feedback and error handling
+   - Consistent navigation and window management
+
+2. **Benchmark Tab**
    - Configure benchmark options
    - Run benchmark with progress tracking
    - View detailed results with performance breakdowns
    - Visualize results or add to leaderboard
 
-2. **Visualize Tab**
+3. **Visualize Tab**
    - View visualizations from benchmark runs
    - Generate custom visualizations from analysis files
    - Save and navigate between multiple visualizations
 
-3. **Leaderboard Tab**
+4. **Leaderboard Tab**
    - View and sort models by performance metrics
    - Compare multiple models with radar charts
    - View model history over time
    - Visualize resource usage across models
    - Generate comprehensive reports
 
-4. **Settings Tab**
+5. **Settings Tab**
    - Configure default behavior and paths
    - Manage application appearance
    - Save and load configurations

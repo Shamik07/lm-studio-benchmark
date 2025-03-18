@@ -6,8 +6,17 @@ import tkinter as tk
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 import tkinter.messagebox as messagebox
+import sys
+from pathlib import Path
 
-from styles import configure_styles
+# Add parent directory to sys.path if needed
+current_dir = Path(__file__).parent
+parent_dir = current_dir.parent
+if str(parent_dir) not in sys.path:
+    sys.path.insert(0, str(parent_dir))
+
+# Import our custom modules
+from styles import configure_styles, THEME_LIGHT, THEME_DARK
 from views.benchmark_view import BenchmarkView
 from views.visualize_view import VisualizeView
 from views.leaderboard_view import LeaderboardView
@@ -32,10 +41,20 @@ class BenchmarkApp:
         self.style = ttk.Style()
         if self.theme_var.get() == "dark":
             self.style.theme_use("darkly")
+            # Add theme colors to style
+            for name, value in THEME_DARK["colors"].items():
+                setattr(self.style.colors, name, value)
         else:
             self.style.theme_use("cosmo")
+            # Add theme colors to style
+            for name, value in THEME_LIGHT["colors"].items():
+                setattr(self.style.colors, name, value)
         
+        # Configure custom styles
         configure_styles(self.style)
+        
+        # Apply some global styling to the root window
+        root.configure(background=self.style.colors.bg)
         
         # Create shared state dictionary
         self.state = {
@@ -82,8 +101,12 @@ class BenchmarkApp:
     
     def create_notebook(self):
         """Create the main notebook interface"""
-        self.notebook = ttk.Notebook(self.root)
-        self.notebook.pack(fill=BOTH, expand=YES, padx=10, pady=10)
+        # Add padding around the notebook for a cleaner look
+        container = ttk.Frame(self.root)
+        container.pack(fill=BOTH, expand=YES, padx=20, pady=20)
+        
+        self.notebook = ttk.Notebook(container)
+        self.notebook.pack(fill=BOTH, expand=YES)
         
         # Create tab views
         self.benchmark_view = BenchmarkView(self.notebook, self.state)
@@ -101,11 +124,20 @@ class BenchmarkApp:
         """Toggle between light and dark themes"""
         if self.theme_var.get() == "dark":
             self.style.theme_use("darkly")
+            # Update colors for dark theme
+            for name, value in THEME_DARK["colors"].items():
+                setattr(self.style.colors, name, value)
         else:
-            self.style.theme_use("cosmo")  # Use 'cosmo' as the light theme
+            self.style.theme_use("cosmo")
+            # Update colors for light theme
+            for name, value in THEME_LIGHT["colors"].items():
+                setattr(self.style.colors, name, value)
         
         # Reconfigure styles
         configure_styles(self.style)
+        
+        # Update root background
+        self.root.configure(background=self.style.colors.bg)
     
     def open_results_file(self):
         """Open a benchmark results file"""

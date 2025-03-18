@@ -8,6 +8,7 @@ import platform
 import threading
 import time
 from typing import List, Dict, Any, Optional, Callable
+from pathlib import Path  # Add this import for Path
 
 from tkinter import Text
 

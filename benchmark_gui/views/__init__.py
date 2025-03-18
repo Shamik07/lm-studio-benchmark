@@ -5,17 +5,18 @@ This package contains all the view components of the application,
 including the main tab views and dialog windows.
 """
 
-from views.benchmark_view import BenchmarkView
-from views.visualize_view import VisualizeView
-from views.leaderboard_view import LeaderboardView
-from views.settings_view import SettingsView
+# Import from the package itself, not from the parent directory
+from benchmark_gui.views.benchmark_view import BenchmarkView
+from benchmark_gui.views.visualize_view import VisualizeView
+from benchmark_gui.views.leaderboard_view import LeaderboardView
+from benchmark_gui.views.settings_view import SettingsView
 
 # Import dialogs
-from views.dialogs.add_leaderboard_entry import AddLeaderboardEntryDialog
-from views.dialogs.entry_details import EntryDetailsDialog
-from views.dialogs.model_compare import ModelCompareDialog
-from views.dialogs.model_history import ModelHistoryDialog
-from views.dialogs.resource_viz import ResourceMetricsDialog
+from benchmark_gui.views.dialogs.add_leaderboard_entry import AddLeaderboardEntryDialog
+from benchmark_gui.views.dialogs.entry_details import EntryDetailsDialog
+from benchmark_gui.views.dialogs.model_compare import ModelCompareDialog
+from benchmark_gui.views.dialogs.model_history import ModelHistoryDialog
+from benchmark_gui.views.dialogs.resource_viz import ResourceMetricsDialog
 
 # Define exported modules
 __all__ = [

@@ -11,6 +11,8 @@ A comprehensive graphical user interface for the LM Studio Coding Benchmark tool
 - **Detailed Performance Analysis**: Examine performance breakdowns by category, difficulty, and language
 - **Report Generation**: Create formatted reports in Markdown, HTML, or plain text formats
 - **Theme Support**: Switch between light and dark themes for comfortable viewing
+- **Robust Error Handling**: Intelligent error recovery and helpful fallback UIs when components fail to load
+- **Consistent Window Management**: Reliable view loading across all application components
 
 ## Installation
 
@@ -41,10 +43,25 @@ A comprehensive graphical user interface for the LM Studio Coding Benchmark tool
 
 3. Run the application:
    ```bash
-   python main.py
+   # From the benchmark_gui directory
+   python run_dashboard.py
+   
+   # Or from the parent directory
+   python -m benchmark_gui.run_dashboard
    ```
 
 ## Usage Guide
+
+### Main Dashboard
+
+The main dashboard provides card-based access to all major functions:
+
+1. **Run Benchmark**: Launch the benchmark configuration and execution panel
+2. **Visualize Results**: Open the visualization tools to explore benchmark results
+3. **Leaderboard**: Access the model comparison and tracking system
+4. **Settings**: Configure application behavior and appearance
+
+Each function opens in a dedicated window with a consistent UI experience and robust error handling.
 
 ### Benchmark Tab
 
@@ -170,6 +187,8 @@ The Settings tab provides extensive configuration options for the application.
 ```
 benchmark_gui/
 ├── main.py                   # Main entry point
+├── dashboard.py              # Modern dashboard UI with card-based interface
+├── run_dashboard.py          # Simple launcher with proper import handling
 ├── app.py                    # Main Application class
 ├── config.py                 # Configuration and constants
 ├── utils.py                  # Utility functions
@@ -221,6 +240,18 @@ benchmark_gui/
 - Consistent light and dark themes
 - Tooltips and contextual help throughout
 - Color-coded metrics for quick assessment
+- Intelligent error handling with helpful fallback UIs
+- Reliable view management across all components
+- Detailed debugging information when components fail
+
+## Troubleshooting
+
+If you encounter blank views or module import errors:
+
+1. Make sure you're running the application using `run_dashboard.py` from the benchmark_gui directory
+2. Check console output for any import or initialization errors
+3. Verify all required dependencies are installed
+4. Use the "Fix Import Paths" button in fallback UIs if available
 
 ## Contributing
 
