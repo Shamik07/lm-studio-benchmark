@@ -1,7 +1,0 @@
-{
-  "model_endpoint": "http://localhost:1234/v1/chat/completions",
-  "timestamp": "2025-03-14 10:51:57",
-  "num_runs": 5,
-  "title": "mlx-community/qwen2.5-coder-7b-instruct Go-Rust Benchmark",
-  "tasks": []
-}
